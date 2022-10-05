@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <title>Pindutin mo yung Yes pls ^^<3</title>
+<body>
+    <div class="ost-multi-header">
+    <div class="w3-container w3-center w3-animate-zoom">
+    <div class="wrapper">
+        <div class="container">
+            <p id="question"><span>Love moko Babyy?</span></p>
+            <button class="btn" id="Oo"><b>Oo</b></button>
+            <button class="btn" id="Hinde"><b>Hinde</b></button>
+        </div>
+    </div> 
+	<style>
+	body{
+		background-color: #ecc8af;
+		border-radius: 25px;
+		border-style: solid;
+		border-color: #ce796b;
+		border-width: 10px;
+		height: 500px;
+		width: 40%;
+		margin: auto;
+		margin-top: 150px;
+		text-align: center;
+}
+	div{
+		border-radius: 25px;
+		background-color: #e7ad99;
+		width: 100%;
+		height: 100%;
+}
+	
+	p {
+		padding: 150px;
+		color:white;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 30px;
+		text-align: center;
+
+}
+	button{
+		color: black;
+		background-color: rgb(206, 120, 107);
+		border-radius: 16%;
+		font-size: 17px;
+		font-family: Arial, Helvetica, sans-serif;
+}
+	</style>
+</body>
+<script>
+    const noBtn = document.getElementById('Hinde');
+    const yesBtn = document.getElementById('Oo');
+    const ques = document.getElementById('question');
+    let btn = document.getElementById('btn');
+        let position;
+        noBtn.addEventListener('mouseover',() =>{
+        let rand = Math.floor(Math.random() * (500 - 100) + 1);
+        let rand2 = Math.floor(Math.random() * (-300 - 100) + 1);
+        noBtn.style.transform = "translate("+rand+"px,"+rand2+"px)";
+        });
+    yesBtn.addEventListener("click",()=>{
+        ques.innerHTML = "Eyyyyy lovee nyakoo BWBEHEHE Mwuahh Iloveyouumoree"
+    })
+</script>
+</html>
